@@ -1,0 +1,46 @@
+{
+    "name": "solana-security-patterns",
+    "version": "1.0.0",
+    "description": "Comprehensive Solana security reference with vulnerable and secure code examples",
+    "main": "index.js",
+    "scripts": {
+        "test": "anchor test",
+        "build": "anchor build",
+        "deploy": "anchor deploy",
+        "lint": "prettier --check .",
+        "format": "prettier --write ."
+    },
+    "keywords": [
+        "solana",
+        "security",
+        "anchor",
+        "blockchain",
+        "smart-contracts",
+        "vulnerability",
+        "defi"
+    ],
+    "author": "Solana Security Team",
+    "license": "MIT",
+    "dependencies": {
+        "@coral-xyz/anchor": "^0.30.0",
+        "@solana/web3.js": "^1.87.6",
+        "@solana/spl-token": "^0.3.9"
+    },
+    "devDependencies": {
+        "@types/bn.js": "^5.1.0",
+        "@types/chai": "^4.3.0",
+        "@types/mocha": "^10.0.0",
+        "chai": "^4.3.6",
+        "mocha": "^10.2.0",
+        "ts-mocha": "^10.0.0",
+        "typescript": "^5.0.0",
+        "prettier": "^3.0.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/SuperteamNG/solana-security-patterns"
+    },
+    "engines": {
+        "node": ">=18.0.0"
+    }
+}

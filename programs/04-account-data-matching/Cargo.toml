@@ -1,0 +1,19 @@
+[package]
+name = "account-data-matching"
+version = "0.1.0"
+description = "Educational example: Account Data Matching (PDA verification) vulnerability"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "account_data_matching"
+
+[features]
+default = []
+cpi = ["no-entrypoint"]
+no-entrypoint = []
+no-idl = []
+idl-build = ["anchor-lang/idl-build"]
+
+[dependencies]
+anchor-lang = "0.30.0"

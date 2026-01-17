@@ -1,0 +1,40 @@
+# MIT License
+
+Copyright (c) 2026 SuperteamNG - Solana Security Patterns
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+## Educational Purpose Disclaimer
+
+This repository contains intentionally vulnerable code for educational purposes only.
+
+⚠️ **WARNING:** The vulnerable code examples in this repository are designed to
+demonstrate security flaws and MUST NOT be used in production environments.
+
+- DO NOT deploy vulnerable examples to any live blockchain
+- DO NOT use vulnerable patterns in real applications
+- DO NOT modify and deploy without thorough security review
+- DO seek professional security audits before mainnet deployment
+
+The authors and contributors are not responsible for any loss of funds or
+security breaches resulting from the misuse of code in this repository.
+
+Use at your own risk and for educational purposes only.

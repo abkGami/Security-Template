@@ -1,0 +1,18 @@
+[package]
+name = "reentrance-attack"
+version = "0.1.0"
+description = "Educational example: Re-entrancy vulnerability"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "reentrance_attack"
+
+[features]
+default = []
+cpi = ["no-entrypoint"]
+no-entrypoint = []
+idl-build = ["anchor-lang/idl-build"]
+
+[dependencies]
+anchor-lang = "0.30.0"

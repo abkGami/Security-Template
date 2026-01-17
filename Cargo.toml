@@ -1,0 +1,21 @@
+[workspace]
+members = [
+    "programs/01-missing-signer-check",
+    "programs/02-missing-owner-check",
+    "programs/03-arithmetic-overflow",
+    "programs/04-account-data-matching",
+    "programs/05-arbitrary-cpi",
+    "programs/06-reentrance-attack",
+    "programs/07-type-cosplay",
+]
+resolver = "2"
+
+[profile.release]
+overflow-checks = true
+lto = "fat"
+codegen-units = 1
+
+[profile.release.build-override]
+opt-level = 3
+incremental = false
+codegen-units = 1

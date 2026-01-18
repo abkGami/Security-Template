@@ -57,7 +57,9 @@ describe("07-type-cosplay", () => {
       console.log("    ✅ Always use Account<'info, T> for typed accounts");
       console.log("    ✅ Let Anchor handle discriminator validation");
       console.log("    ✅ Use #[account] macro for all custom types");
-      console.log("    ✅ Never manually deserialize without discriminator check");
+      console.log(
+        "    ✅ Never manually deserialize without discriminator check",
+      );
       console.log("    ❌ Don't use AccountInfo for structured data");
     });
 

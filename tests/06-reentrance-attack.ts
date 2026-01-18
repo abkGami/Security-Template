@@ -8,7 +8,8 @@ describe("06-reentrance-attack", () => {
   const provider = anchor.AnchorProvider.env();
   anchor.setProvider(provider);
 
-  const program = anchor.workspace.ReentranceAttack as Program<ReentranceAttack>;
+  const program = anchor.workspace
+    .ReentranceAttack as Program<ReentranceAttack>;
 
   describe("❌ VULNERABLE: Re-entrancy", () => {
     it("Demonstrates re-entrancy vulnerability", async () => {

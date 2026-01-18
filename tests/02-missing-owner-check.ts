@@ -8,8 +8,9 @@ describe("02-missing-owner-check", () => {
   const provider = anchor.AnchorProvider.env();
   anchor.setProvider(provider);
 
-  const program = anchor.workspace.MissingOwnerCheck as Program<MissingOwnerCheck>;
-  
+  const program = anchor.workspace
+    .MissingOwnerCheck as Program<MissingOwnerCheck>;
+
   let user: Keypair;
   let vaultKeypair: Keypair;
 
@@ -19,7 +20,7 @@ describe("02-missing-owner-check", () => {
 
     const airdrop = await provider.connection.requestAirdrop(
       user.publicKey,
-      2 * LAMPORTS_PER_SOL
+      2 * LAMPORTS_PER_SOL,
     );
     await provider.connection.confirmTransaction(airdrop);
   });
@@ -27,9 +28,13 @@ describe("02-missing-owner-check", () => {
   describe("❌ VULNERABLE: missing owner check", () => {
     it("Demonstrates owner check vulnerability", async () => {
       console.log("    ⚠️  VULNERABILITY: No owner verification on accounts");
-      console.log("    ⚠️  Attacker can pass fake accounts owned by their program");
+      console.log(
+        "    ⚠️  Attacker can pass fake accounts owned by their program",
+      );
       console.log("    ⚠️  Program treats fake accounts as legitimate");
-      console.log("    ⚠️  Result: Bypass of balance checks and state validation");
+      console.log(
+        "    ⚠️  Result: Bypass of balance checks and state validation",
+      );
     });
   });
 
@@ -42,7 +47,9 @@ describe("02-missing-owner-check", () => {
     });
 
     it("Manual owner verification as alternative", async () => {
-      console.log("    ✅ Manual check: require!(account.owner == &expected_program)");
+      console.log(
+        "    ✅ Manual check: require!(account.owner == &expected_program)",
+      );
       console.log("    ✅ Verify before deserializing any data");
       console.log("    ✅ Never trust AccountInfo without validation");
     });

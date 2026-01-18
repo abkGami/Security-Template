@@ -8,8 +8,9 @@ describe("04-account-data-matching", () => {
   const provider = anchor.AnchorProvider.env();
   anchor.setProvider(provider);
 
-  const program = anchor.workspace.AccountDataMatching as Program<AccountDataMatching>;
-  
+  const program = anchor.workspace
+    .AccountDataMatching as Program<AccountDataMatching>;
+
   let user: Keypair;
 
   beforeEach(async () => {
@@ -17,7 +18,7 @@ describe("04-account-data-matching", () => {
 
     const airdrop = await provider.connection.requestAirdrop(
       user.publicKey,
-      2 * LAMPORTS_PER_SOL
+      2 * LAMPORTS_PER_SOL,
     );
     await provider.connection.confirmTransaction(airdrop);
   });
